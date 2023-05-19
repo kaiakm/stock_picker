@@ -5,7 +5,7 @@ def stock_picker(prices)
 
     (0...prices.length).each do |i|
         (i+1...prices.length).each do |j|
-            profit = prices[j] - prices [i]
+            profit = prices[j] - prices[i]
             if profit > max_profit
                 max_profit = profit
                 buy_day = i
